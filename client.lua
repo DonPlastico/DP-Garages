@@ -273,7 +273,7 @@ RegisterNUICallback('confirmRemoveVehicle', function(data, cb)
         }
     }}
 
-    exports['qb-menu']:openMenu(removeMenu)
+    exports['DP-Menu']:openMenu(removeMenu)
 
     cb({
         status = "success"
@@ -320,7 +320,7 @@ callbackRegistry = {}
 RegisterNUICallback('confirmDeleteGarage', function(data, cb)
     local garageId = data.garageId
 
-    exports['qb-menu']:openMenu({{
+    exports['DP-Menu']:openMenu({{
         header = "Confirmar eliminación",
         isMenuHeader = true
     }, {
